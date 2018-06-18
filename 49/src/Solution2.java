@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * 求丑数，讨论去提供的解法，和书上的思路是一样的
  */
@@ -32,7 +30,7 @@ public class Solution2 {
                 t5++;
             }
         }
-        System.out.println(Arrays.toString(dp));
+        // System.out.println(Arrays.toString(dp));
         return dp[index - 1];
     }
 

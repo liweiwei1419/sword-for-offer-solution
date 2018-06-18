@@ -7,6 +7,7 @@ class ListNode {
         this.val = val;
     }
 
+    @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
         ListNode cur = this;

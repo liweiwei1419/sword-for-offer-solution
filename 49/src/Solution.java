@@ -16,7 +16,6 @@ public class Solution {
         return number == 1;
     }
 
-
     public int getUglyNumber(int index) {
         if (index <= 0) {
             return 0;
@@ -38,6 +37,5 @@ public class Solution {
             int getUglyNumberSolution = solution.getUglyNumber(i);
             System.out.printf("%s ",getUglyNumberSolution);
         }
-
     }
 }

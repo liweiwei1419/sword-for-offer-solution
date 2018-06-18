@@ -26,7 +26,7 @@ public class Solution {
                 k--;
             }
         }
-        while (j>=0){
+        while (j >= 0) {
             array[j] = buff[j];
             j--;
         }
