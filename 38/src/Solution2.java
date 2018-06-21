@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * 采用书上说的交换的解法
@@ -12,13 +14,20 @@ public class Solution2 {
         if (len == 0) {
             return res;
         }
-        findPermutation(str.toCharArray(), 0, len, res);
+        char[] chars = str.toCharArray();
+        findPermutation(chars, 0, len, res);
+        // 这一步排序其实是没有必要的，只是为了通过 online judge
+        Collections.sort(res);
         return res;
     }
 
     private void findPermutation(char[] chars, int begin, int len, ArrayList<String> res) {
         if (begin == len - 1) {
-            res.add(String.valueOf(chars));
+            String s = String.valueOf(chars);
+            // 在这一步去重，以
+            if(!res.contains(s)){
+                res.add(s);
+            }
             return;
         }
         for (int i = begin; i < len; i++) {
