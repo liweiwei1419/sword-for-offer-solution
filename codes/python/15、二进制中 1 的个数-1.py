@@ -15,3 +15,10 @@ class Solution(object):
             n = n >> 1
             # print(n)
         return count
+
+
+if __name__ == '__main__':
+    ALL_ONE = 2 ** 32 - 1
+    a = 0xffffffff
+    print(ALL_ONE)
+    print(a)
